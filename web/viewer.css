@@ -14,7 +14,6 @@
  */
 
 @import url(pdf_viewer.css);
-@import url(theme.css);
 
 :root {
   --sidebar-width: 200px;
@@ -1910,4 +1909,34 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
     display: none;
   }
 }
+
+/* OVERRIDES */
+
+/* Hide unused components */
+button#viewAttachments,
+button#openFile,
+button#secondaryToolbarToggle,
+button#download,
+a#viewBookmark {
+  display: none;
+}
+
+/* Icons override */
+.handToolIcon,
+.selectToolIcon {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+}
+
+/* Background overrides */
+body {
+  background: #2d323d;
+}
+
+#toolbarContainer, .findbar, .secondaryToolbar,
+#toolbarSidebar {
+  background: #252932 none;
+}
+
 
