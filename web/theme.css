@@ -1,0 +1,18 @@
+/* Hide unused components */
+button#viewAttachments,
+button#openFile,
+button#secondaryToolbarToggle,
+button#download,
+a#viewBookmark {
+  display: none;
+}
+
+/* Icons override */
+.toolbarButton.handTool::before {
+  content: url(images/secondaryToolbarButton-handTool.png);
+}
+
+.toolbarButton.selectTool::before {
+  content: url(images/secondaryToolbarButton-selectTool.png);
+}
+

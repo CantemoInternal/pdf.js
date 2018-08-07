@@ -119,7 +119,6 @@ See https://github.com/adobe-type-tools/cmap-resources
 
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
           <div id="secondaryToolbarButtonContainer">
-            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Presentation Mode" tabindex="51" data-l10n-id="presentation_mode">
               <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
             </button>
 
@@ -159,14 +158,6 @@ See https://github.com/adobe-type-tools/cmap-resources
 
             <div class="horizontalToolbarSeparator"></div>
 
-            <button id="cursorSelectTool" class="secondaryToolbarButton selectTool toggled" title="Enable Text Selection Tool" tabindex="60" data-l10n-id="cursor_text_select_tool">
-              <span data-l10n-id="cursor_text_select_tool_label">Text Selection Tool</span>
-            </button>
-            <button id="cursorHandTool" class="secondaryToolbarButton handTool" title="Enable Hand Tool" tabindex="61" data-l10n-id="cursor_hand_tool">
-              <span data-l10n-id="cursor_hand_tool_label">Hand Tool</span>
-            </button>
-
-            <div class="horizontalToolbarSeparator"></div>
 
             <button id="scrollVertical" class="secondaryToolbarButton scrollModeButtons scrollVertical toggled" title="Use Vertical Scrolling" tabindex="62" data-l10n-id="scroll_vertical">
               <span data-l10n-id="scroll_vertical_label">Vertical Scrolling</span>
@@ -222,12 +213,16 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <span id="numPages" class="toolbarLabel"></span>
               </div>
               <div id="toolbarViewerRight">
-                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="31" data-l10n-id="presentation_mode">
-                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
-                </button>
-
                 <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="Open File" tabindex="32" data-l10n-id="open_file">
                   <span data-l10n-id="open_file_label">Open</span>
+                </button>
+
+                <button id="cursorSelectTool" class="toolbarButton selectTool toggled" title="Enable Text Selection Tool" tabindex="60" data-l10n-id="cursor_text_select_tool">
+                  <span data-l10n-id="cursor_text_select_tool_label">Text Selection Tool</span>
+                </button>
+
+                <button id="cursorHandTool" class="toolbarButton handTool" title="Enable Hand Tool" tabindex="61" data-l10n-id="cursor_hand_tool">
+                  <span data-l10n-id="cursor_hand_tool_label">Hand Tool</span>
                 </button>
 
                 <button id="print" class="toolbarButton print hiddenMediumView" title="Print" tabindex="33" data-l10n-id="print">
@@ -241,7 +236,9 @@ See https://github.com/adobe-type-tools/cmap-resources
                   <span data-l10n-id="bookmark_label">Current View</span>
                 </a>
 
-                <div class="verticalToolbarSeparator hiddenSmallView"></div>
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="31" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+                </button>
 
                 <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="36" data-l10n-id="tools">
                   <span data-l10n-id="tools_label">Tools</span>

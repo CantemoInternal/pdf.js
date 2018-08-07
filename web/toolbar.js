@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+import { CursorTool } from './pdf_cursor_tools';
 import {
   animationStarted, DEFAULT_SCALE, DEFAULT_SCALE_VALUE, MAX_SCALE,
   MIN_SCALE, noContextMenuHandler, NullL10n
@@ -150,6 +151,14 @@ class Toolbar {
 
     items.download.addEventListener('click', function() {
       eventBus.dispatch('download');
+    });
+
+    items.cursorSelectToolButton.addEventListener('click', function() {
+      eventBus.dispatch('switchcursortool', {tool: CursorTool.SELECT});
+    });
+
+    items.cursorHandToolButton.addEventListener('click', function() {
+      eventBus.dispatch('switchcursortool', {tool: CursorTool.HAND});
     });
 
     // Suppress context menus for some controls.

@@ -61,8 +61,6 @@ class SecondaryToolbar {
     this.toggleButton = options.toggleButton;
     this.toolbarButtonContainer = options.toolbarButtonContainer;
     this.buttons = [
-      { element: options.presentationModeButton, eventName: 'presentationmode',
-        close: true, },
       { element: options.openFileButton, eventName: 'openfile', close: true, },
       { element: options.printButton, eventName: 'print', close: true, },
       { element: options.downloadButton, eventName: 'download', close: true, },
@@ -74,10 +72,6 @@ class SecondaryToolbar {
         close: false, },
       { element: options.pageRotateCcwButton, eventName: 'rotateccw',
         close: false, },
-      { element: options.cursorSelectToolButton, eventName: 'switchcursortool',
-        eventDetails: { tool: CursorTool.SELECT, }, close: true, },
-      { element: options.cursorHandToolButton, eventName: 'switchcursortool',
-        eventDetails: { tool: CursorTool.HAND, }, close: true, },
       { element: options.scrollVerticalButton, eventName: 'switchscrollmode',
         eventDetails: { mode: ScrollMode.VERTICAL, }, close: true, },
       { element: options.scrollHorizontalButton, eventName: 'switchscrollmode',

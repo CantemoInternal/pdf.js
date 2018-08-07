@@ -78,6 +78,8 @@ function getViewerConfiguration() {
       presentationModeButton: document.getElementById('presentationMode'),
       download: document.getElementById('download'),
       viewBookmark: document.getElementById('viewBookmark'),
+      cursorSelectToolButton: document.getElementById('cursorSelectTool'),
+      cursorHandToolButton: document.getElementById('cursorHandTool'),
     },
     secondaryToolbar: {
       toolbar: document.getElementById('secondaryToolbar'),
